@@ -4,10 +4,10 @@ pub type TouchDevice = ll::SDL_TouchID;
 
 #[deriving(Eq)]
 pub struct Finger {
-    id: TouchDevice,
-    x: f32,
-    y: f32,
-    pressure: f32,
+    pub id: TouchDevice,
+    pub x: f32,
+    pub y: f32,
+    pub pressure: f32,
 }
 
 #[allow(non_camel_case_types)]

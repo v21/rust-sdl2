@@ -9,7 +9,7 @@ pub mod ll {
     pub type SDL_Joystick = c_void;
 
     pub struct SDL_JoystickGUID {
-        data: [uint8_t, ..16u],
+        pub data: [uint8_t, ..16u],
     }
 
     extern "C" {

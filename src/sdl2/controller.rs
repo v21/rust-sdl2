@@ -17,17 +17,17 @@ pub mod ll {
     pub static SDL_CONTROLLER_BINDTYPE_HAT: SDL_GameControllerBindType = 3;
 
     pub struct SDL_GameControllerButtonBind {
-        bindType: SDL_GameControllerBindType,
-        value: SDL_GameControllerButtonBindData,
+        pub bindType: SDL_GameControllerBindType,
+        pub value: SDL_GameControllerButtonBindData,
     }
 
     pub struct SDL_GameControllerButtonBindData {
-        data: [c_uchar, ..8u],
+        pub data: [c_uchar, ..8u],
     }
 
     pub struct SDL_GameControllerButtonBindDataHat {
-        hat: c_int,
-        hat_mask: c_int,
+        pub hat: c_int,
+        pub hat_mask: c_int,
     }
 
     impl SDL_GameControllerButtonBindData {
